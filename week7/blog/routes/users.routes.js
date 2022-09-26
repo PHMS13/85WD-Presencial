@@ -5,6 +5,8 @@ const router = express.Router();
 
 const UserModel = require("../models/User.model");
 
+//sign up
+
 router.post("/create", async (req, res) => {
   try {
     const newUser = await UserModel.create({ ...req.body });
@@ -39,6 +41,10 @@ router.get("/user/:id", async (req, res) => {
     return res.status(400).json(error);
   }
 });
+
+const middleWareTeste
+
+//profile
 
 router.put("/edit/:idUser", async (req, res) => {
   try {
